@@ -6,7 +6,7 @@ from docx import Document
 import PyPDF2
 from bs4 import BeautifulSoup
 
-openai.api_key = os.getenv('OPENAI_API_KEY', 'sk-9JghU86cWHYArV5nPH5eehUEjf8npu7fb4-5EnCPmgT3BlbkFJrbwOgrIiZ6mYOTN0uNtvsBpYzuCXuo1Re8tPK5-WgA')
+openai.api_key = os.getenv('OPENAI_API_KEY', 'openai_api')
 
 def extract_text_from_pdf(file):
     pdf_reader = PyPDF2.PdfReader(file)
