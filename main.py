@@ -6,6 +6,7 @@ from docx import Document
 import PyPDF2
 from bs4 import BeautifulSoup
 
+
 openai.api_key = os.getenv('OPENAI_API_KEY')
 
 if not openai.api_key:
