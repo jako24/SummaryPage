@@ -50,7 +50,7 @@ def translate_to_english(text):
 
 def answer_question(context, question):
     response = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo",
+        model="gpt-4o",
         messages=[
             {"role": "system", "content": "You are a helpful assistant that answers questions based on the given context. Always answer in English."},
             {"role": "user", "content": f"Context: {context}\n\nQuestion: {question}"}
